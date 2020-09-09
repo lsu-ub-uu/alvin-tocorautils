@@ -46,4 +46,10 @@ public class RecordReaderSpy implements RecordReader {
 		return null;
 	}
 
+	@Override
+	public Map<String, Object> readNextValueFromSequence(String sequenceName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
