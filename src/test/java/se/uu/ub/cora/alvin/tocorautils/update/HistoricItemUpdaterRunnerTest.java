@@ -27,8 +27,8 @@ import java.lang.reflect.Modifier;
 
 import org.testng.annotations.Test;
 
-import se.uu.ub.cora.javaclient.CoraClientImp;
 import se.uu.ub.cora.javaclient.apptoken.AppTokenClientFactoryImp;
+import se.uu.ub.cora.javaclient.cora.http.ApptokenBasedClient;
 import se.uu.ub.cora.javaclient.rest.RestClientFactoryImp;
 
 public class HistoricItemUpdaterRunnerTest {
@@ -52,8 +52,8 @@ public class HistoricItemUpdaterRunnerTest {
 		assertTrue(HistoricItemUpdaterRunner.historicItemUpdater instanceof ClientUpdaterSpy);
 
 		ClientUpdaterSpy historicItemUpdater = (ClientUpdaterSpy) HistoricItemUpdaterRunner.historicItemUpdater;
-		assertTrue(historicItemUpdater.getCoraClient() instanceof CoraClientImp);
-		CoraClientImp coraClient = (CoraClientImp) historicItemUpdater.getCoraClient();
+		assertTrue(historicItemUpdater.getCoraClient() instanceof ApptokenBasedClient);
+		ApptokenBasedClient coraClient = (ApptokenBasedClient) historicItemUpdater.getCoraClient();
 
 		AppTokenClientFactoryImp appTokenClientFactory = (AppTokenClientFactoryImp) coraClient
 				.getAppTokenClientFactory();
