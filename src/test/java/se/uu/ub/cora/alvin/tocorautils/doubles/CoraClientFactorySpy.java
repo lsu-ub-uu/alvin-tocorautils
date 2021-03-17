@@ -49,4 +49,10 @@ public class CoraClientFactorySpy implements CoraClientFactory {
 		return new CoraClientFactorySpy(appTokenVerifierUrl, baseUrl);
 	}
 
+	@Override
+	public CoraClient factorUsingAuthToken(String authToken) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
