@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import se.uu.ub.cora.sqldatabase.DbQueryInfo;
 import se.uu.ub.cora.sqldatabase.RecordReader;
 
 public class RecordReaderSpy implements RecordReader {
@@ -50,6 +51,19 @@ public class RecordReaderSpy implements RecordReader {
 	public Map<String, Object> readNextValueFromSequence(String sequenceName) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public List<Map<String, Object>> readAllFromTable(String tableName, DbQueryInfo queryInfo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long readNumberOfRows(String tableName, Map<String, Object> conditions,
+			DbQueryInfo queryInfo) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

@@ -22,7 +22,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>1.3.0</version>
+		<version>1.4.1</version>
 	</parent>
 
 	<artifactId>alvintocorautils</artifactId>
@@ -32,12 +32,12 @@
 	<name>Alvin to Cora utils</name>
 
 	<properties>
-		<logger.version>2.2.0</logger.version>
-		<coralog4j.version>2.2.0</coralog4j.version>
-		<clientdata.version>3.7.0</clientdata.version>
-		<sqldatabase.version>2.6.0</sqldatabase.version>
-		<json.version>2.2.0</json.version>
-		<javaclient.version>1.8.0</javaclient.version>
+		<logger.version>2.3.0</logger.version>
+		<coralog4j.version>2.3.0</coralog4j.version>
+		<clientdata.version>3.10.0</clientdata.version>
+		<sqldatabase.version>4.1.0</sqldatabase.version>
+		<json.version>2.5.0</json.version>
+		<javaclient.version>1.10.0</javaclient.version>
 	</properties>
 
 	<scm>
